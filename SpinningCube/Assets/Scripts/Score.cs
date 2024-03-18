@@ -11,7 +11,5 @@ public class Score : MonoBehaviour
     void Start()
     {
         var controller = FindObjectOfType<Crapper>();
-        controller.ScoreChange.AddListener(OnScoreChanged);
-        OnScoreChanged(controller.score);
     }
 }

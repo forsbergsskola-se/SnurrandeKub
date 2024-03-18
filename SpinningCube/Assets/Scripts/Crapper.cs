@@ -24,6 +24,7 @@ public class Crapper : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Missile.SetActive(true);
+            
             if (_rb.simulated)
             {
                 _rb.velocity = new Vector2(_rb.velocity.x, crapPower);
