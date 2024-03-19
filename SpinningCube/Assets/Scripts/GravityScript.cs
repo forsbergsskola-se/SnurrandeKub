@@ -11,7 +11,9 @@ public class GravityScript : MonoBehaviour
     
     void Update()
     {
-        var gravity = GravitySensor.current.gravity;
-        Physics.gravity = gravity.value;
+        var gravity = GravitySensor.current.gravity.value;
+        gravity.z *= -1; //Flip z axi since flat place phone yields negative z gravity
+        gravity *= 9.81f; //scale gravity since sensor returns normalized values
+        Physics.gravity = gravity;
     }
 }

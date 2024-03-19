@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainScene.unity
     guid: eb022f9af56d42948b46e972704288a3
   - enabled: 1
+    path: Assets/Scenes/GravityScene.unity
+    guid: 420a18ddb7227a949a892aaddbeea6b4
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: c850ee8c3b14cc8459e7e186857cf567
   m_configObjects:
